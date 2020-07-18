@@ -1,7 +1,7 @@
 import React from 'react';
-import s from './MyPosts.module.css';
+import classes from './MyPosts.module.css';
 import Post from './Post/Post';
-import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../redux/state";
+import {addPostActionCreator, updateNewPostTextActionCreator} from "../../../redux/profile-reducer";
 
 
 const MyPosts = (props) => {
@@ -22,7 +22,7 @@ const MyPosts = (props) => {
     }
 
     return (
-        <div className={s.postsBlock}>
+        <div className={classes.postsBlock}>
             <h3>My posts</h3>
             <div>
                 <div>
@@ -33,7 +33,7 @@ const MyPosts = (props) => {
                     <button onClick={addPost}>Add post</button>
                 </div>
             </div>
-            <div className={s.posts}>
+            <div className={classes.posts}>
                 {postsElements}
             </div>
         </div>

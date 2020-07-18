@@ -1,3 +1,10 @@
+.imageWrapper {
+    display: flex;
+    justify-content: center;
+}
+.image {
+    width: 50%;
+}
 .descriptionBlock {
     padding: 10px;
 }
